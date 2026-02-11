@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Happy Valentine's Day!</h1>
+        <div class="slideshow">
+            <img src="IMG-20260211-WA0039.jpg" alt="My Crush" class="crush-image active">
+            <img src="IMG-20260211-WA0040.jpg" alt="Memory 1" class="crush-image">
+            <img src="IMG-20260211-WA0042.jpg" alt="Memory 2" class="crush-image">
+            <button id="prevBtn" class="slide-btn">&lt;</button>
+            <button id="nextBtn" class="slide-btn">&gt;</button>
+        </div>
+        <div class="timer">
+            <h2>Countdown to Valentine's Day:</h2>
+            <div id="countdown">00:00:00:00</div>
+        </div>
+        <div class="question">
+            <h2 id="questionText"></h2>
+            <button id="yesBtn">Yes</button>
+            <button id="noBtn">No</button>
+            <div id="noMessages" class="hidden"></div>
+        </div>
+        <div id="celebration" class="hidden">
+            <h2>Yay! I love you! ❤️</h2>
+            <p>Happy Valentine's Day, my love!</p>
+            <div id="poem" class="poem"></div>
+            <button id="themeBtn">Change Theme</button>
+        </div>
+        <div class="game">
+            <h3>Click the hearts! Score: <span id="score">0</span></h3>
+        </div>
+        <div class="rose-container">
+            <div id="rose"></div>
+        </div>
+    </div>
+    <audio id="bgMusic" loop>
+        <source src="romantic.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="clickSound">
+        <source src="click.mp3" type="audio/mpeg">
+    </audio>
+    <div id="hearts"></div>
+    <div id="fireworks"></div>
+    <script src="script.js"></script>
+</body>
+</html>
